@@ -1,11 +1,12 @@
-<top-menu></top-menu>
+<md-content layout="row" flex="100" layout-wrap>
+	<md-content layout="row" flex="100">
+	    <top-menu layout="row" flex layout-wrap></top-menu>
+	</md-content>
 
-<md-content flex layout-margin>
-    <router-outlet></router-outlet>
+	<md-content flex="100" layout="row" layout-margin>
+	    <router-outlet></router-outlet>
+	</md-content>
+	<md-content layout="row" flex="100" layout-wrap>
+		<footer></footer>
+	</md-content>
 </md-content>
-
-<footer class="footer">
-    <div class="container">
-        <p class="text-muted">Created by <a href="https://github.com/blacksonic">Soós Gábor</a>.</p>
-    </div>
-</footer>

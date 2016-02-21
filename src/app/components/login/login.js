@@ -2,8 +2,8 @@ import { Component } from 'angular2/core';
 import { FORM_DIRECTIVES, FormBuilder, Validators } from 'angular2/common';
 import { Router } from 'angular2/router';
 import template from './login.html';
-import { UserService } from '../services/user';
-import { validatorFactory } from '../plugins/validator';
+import { UserService } from '../../services/user';
+import { validatorFactory } from '../../plugins/validator';
 
 @Component({
   selector: 'login',

@@ -1,0 +1,10 @@
+<md-content layout="row" flex="100" layout-wrap>    
+    <md-toolbar layout="row" class="fixed-toolbar">
+        <h2 class="md-toolbar-tools">Black Hole</h2>
+        <div layout="row" layout-align="center center">
+            <a md-button [routerLink]="['/About']">About</a>
+            <a md-button [routerLink]="['/Login']" *ngIf="!(getLoggedIn() | async)">Login</a>
+            <a md-button href="#" (click)="logout()" *ngIf="getLoggedIn() | async">Logout</a>
+        </div>
+    </md-toolbar>
+</md-content>
